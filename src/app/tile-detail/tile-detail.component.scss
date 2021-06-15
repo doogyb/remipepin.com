@@ -1,0 +1,54 @@
+@font-face {
+  font-family: "Tungsten Bold";
+  src: url("//db.onlinewebfonts.com/t/561f38b1f4570de0fb8a39d691ab058c.eot");
+  src: url("//db.onlinewebfonts.com/t/561f38b1f4570de0fb8a39d691ab058c.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/561f38b1f4570de0fb8a39d691ab058c.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/561f38b1f4570de0fb8a39d691ab058c.woff") format("woff"), url("//db.onlinewebfonts.com/t/561f38b1f4570de0fb8a39d691ab058c.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/561f38b1f4570de0fb8a39d691ab058c.svg#Tungsten Bold") format("svg");
+}
+
+
+$minWidth: 1000px;
+$sm: 576px;
+
+div {
+  text-align: center;
+}
+
+img {
+  height: 100%;
+  max-width: 60vh;
+}
+
+.img-wrapper {
+  @media only screen and (min-width: $sm) {
+    height: 60vh;
+
+  }
+
+  @media only screen and (max-width: $sm) {
+    height: 50vh;
+  }
+}
+
+#carousel-container {
+
+  // @media only screen and (min-width: $minWidth) {
+  //   padding: 0 250px 35px 250px;
+  // }
+
+  touch-action: pan-y !important;
+  padding-bottom: 10px;
+}
+
+ngb-carousel:focus {
+  outline: none;
+}
+
+.carousel-caption {
+  font-family: "Tungsten Bold";
+  position: unset;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+#hide {
+  color: white;
+}

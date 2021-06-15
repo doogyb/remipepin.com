@@ -1,0 +1,20 @@
+<div class="flip-card"
+     snInViewport
+     [inViewportOptions]="{rootMargin: '-25% 0% -75% 0%'}">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src={{link}}>
+    </div>
+    <a href="#carousel">
+      <div class="flip-card-back"
+           [ngStyle]="{'background': background}">
+        <div class="flip-card-info">
+          <h1>
+            {{ tile.title }}
+          </h1>
+          <p><u>View</u></p>
+        </div>
+      </div>
+    </a>
+  </div>
+</div>

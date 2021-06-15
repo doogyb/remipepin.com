@@ -1,0 +1,55 @@
+@font-face {
+  font-family: "Tungsten Bold";
+  src: url("//db.onlinewebfonts.com/t/561f38b1f4570de0fb8a39d691ab058c.eot");
+  src: url("//db.onlinewebfonts.com/t/561f38b1f4570de0fb8a39d691ab058c.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/561f38b1f4570de0fb8a39d691ab058c.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/561f38b1f4570de0fb8a39d691ab058c.woff") format("woff"), url("//db.onlinewebfonts.com/t/561f38b1f4570de0fb8a39d691ab058c.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/561f38b1f4570de0fb8a39d691ab058c.svg#Tungsten Bold") format("svg");
+}
+
+@font-face {
+  font-family: "GothamHTF-Medium";
+  src: url("//db.onlinewebfonts.com/t/7660bb62fdc3548ba51b96d0fba2705b.eot");
+  src: url("//db.onlinewebfonts.com/t/7660bb62fdc3548ba51b96d0fba2705b.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/7660bb62fdc3548ba51b96d0fba2705b.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/7660bb62fdc3548ba51b96d0fba2705b.woff") format("woff"), url("//db.onlinewebfonts.com/t/7660bb62fdc3548ba51b96d0fba2705b.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/7660bb62fdc3548ba51b96d0fba2705b.svg#GothamHTF-Medium") format("svg");
+}
+
+
+
+mat-toolbar-row {
+  background: #d92d2b;
+  height: 200px;
+  padding: 50px 0px 0px 20px;
+}
+
+#container {
+  position: relative;
+
+  #link {
+    position: absolute;
+    bottom: 5px;
+    height: 20px;
+    font-size: 20px;
+    margin-left: 10px;
+  }
+
+  a {
+    font-family: GothamHTF-Medium;
+    color: white;
+    top: 0;
+    text-decoration: none;
+  }
+
+  fa-icon {
+    margin-left: -2px;
+    font-size: 18px;
+  }
+
+
+}
+
+
+
+#contact {
+  height: 0;
+}
+
+#header {
+  height: 100px;
+}

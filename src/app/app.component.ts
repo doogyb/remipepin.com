@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
+import { GridComponent } from './grid/grid.component';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'remi';
+  @ViewChild('grid') grid: GridComponent;
+
+  hideCarousel() {
+    this.grid.detail.visible = false;
+  }
 }

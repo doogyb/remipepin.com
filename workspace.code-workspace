@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../../../../etc/apache2"
+		},
+		{
+			"path": "../../Server"
+		},
+		{
+			"path": "../../bin"
+		}
+	],
+	"settings": {}
+}

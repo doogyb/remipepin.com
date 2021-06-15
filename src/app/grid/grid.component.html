@@ -1,0 +1,13 @@
+<tile-detail #tile_detail
+             [tile]="selectedTile"
+             [tiles]="tiles"></tile-detail>
+
+<mat-grid-list [cols]="breakpoint"
+               rowHeight="1:1"
+               gutterSize="0"
+               (window:resize)="onResize($event)">
+  <mat-grid-tile *ngFor="let tile of tiles">
+    <tile [tile]=tile
+          (click)="selectTile(tile)"></tile>
+  </mat-grid-tile>
+</mat-grid-list>
