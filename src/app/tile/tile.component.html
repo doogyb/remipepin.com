@@ -1,13 +1,14 @@
-<div class="flip-card"
-     snInViewport
-     [inViewportOptions]="{rootMargin: '-25% 0% -75% 0%'}">
-  <div class="flip-card-inner">
-    <div class="flip-card-front">
-      <img src={{link}}>
-    </div>
-    <a href="#carousel">
-      <div class="flip-card-back"
-           [ngStyle]="{'background': background}">
+<a href="#carousel">
+  <div
+    class="flip-card"
+    snInViewport
+    [inViewportOptions]="{ rootMargin: '-25% 0% -75% 0%' }"
+  >
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img src="{{ link }}" />
+      </div>
+      <div class="flip-card-back" [ngStyle]="{ background: background }">
         <div class="flip-card-info">
           <h1>
             {{ tile.title }}
@@ -15,6 +16,22 @@
           <p><u>View</u></p>
         </div>
       </div>
-    </a>
+    </div>
   </div>
-</div>
+</a>
+
+<!-- <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+  <div class="flipper">
+    <div class="front">
+      <img src="{{ link }}" />
+    </div>
+    <div class="back">
+      <div class="flip-info-info">
+        <h1>
+          {{ tile.title }}
+        </h1>
+        <p><u>View</u></p>
+      </div>
+    </div>
+  </div>
+</div> -->

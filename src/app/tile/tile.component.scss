@@ -1,7 +1,16 @@
 @font-face {
   font-family: "Tungsten Bold";
   src: url("//db.onlinewebfonts.com/t/561f38b1f4570de0fb8a39d691ab058c.eot");
-  src: url("//db.onlinewebfonts.com/t/561f38b1f4570de0fb8a39d691ab058c.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/561f38b1f4570de0fb8a39d691ab058c.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/561f38b1f4570de0fb8a39d691ab058c.woff") format("woff"), url("//db.onlinewebfonts.com/t/561f38b1f4570de0fb8a39d691ab058c.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/561f38b1f4570de0fb8a39d691ab058c.svg#Tungsten Bold") format("svg");
+  src: url("//db.onlinewebfonts.com/t/561f38b1f4570de0fb8a39d691ab058c.eot?#iefix")
+      format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/561f38b1f4570de0fb8a39d691ab058c.woff2")
+      format("woff2"),
+    url("//db.onlinewebfonts.com/t/561f38b1f4570de0fb8a39d691ab058c.woff")
+      format("woff"),
+    url("//db.onlinewebfonts.com/t/561f38b1f4570de0fb8a39d691ab058c.ttf")
+      format("truetype"),
+    url("//db.onlinewebfonts.com/t/561f38b1f4570de0fb8a39d691ab058c.svg#Tungsten Bold")
+      format("svg");
 }
 
 $xs: 0px;
@@ -26,8 +35,6 @@ $xxl: 1400px;
   transition: transform 0.8s;
   transform-style: preserve-3d;
 }
-
-
 
 /* Position the front and back side */
 .flip-card-front,
@@ -56,19 +63,16 @@ $xxl: 1400px;
   right: 0%;
   color: white;
   transform: rotateY(180deg);
-
-
 }
 
 // default mobile first
 @media only screen and (max-width: $sm) {
   .flip-card.sn-viewport--in {
-
     .flip-card-inner {
       transform: rotateY(180deg);
 
       img {
-        opacity: .2;
+        opacity: 0.2;
       }
     }
   }
@@ -92,7 +96,6 @@ $xxl: 1400px;
     transform: rotateY(180deg);
   }
 
-
   .flip-card-info {
     h1 {
       font-size: 5.5vw;
@@ -104,9 +107,7 @@ $xxl: 1400px;
   }
 }
 
-
 @media only screen and (min-width: $md) {
-
   .flip-card-info {
     h1 {
       font-size: 3.5vw;
@@ -129,8 +130,6 @@ $xxl: 1400px;
     p {
       font-size: 1.6vw;
     }
-
-
   }
 }
 
@@ -145,7 +144,6 @@ $xxl: 1400px;
     p {
       font-size: 1vw;
     }
-
   }
 }
 
