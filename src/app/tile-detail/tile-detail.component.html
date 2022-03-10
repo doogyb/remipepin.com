@@ -1,32 +1,25 @@
-<div id="carousel-container"
-     (pan)="onSwipe($event)"
-     *ngIf="tiles && tile && visible">
-
-  <ngb-carousel #carousel
-                [activeId]=tile.id
-                [interval]=0>
-
-
-
-    <ng-template ngbSlide
-                 *ngFor="let t of tiles"
-                 [id]=t.id>
-
+<div
+  id="carousel-container"
+  (pan)="onSwipe($event)"
+  *ngIf="tiles && tile && visible"
+>
+  <ngb-carousel #carousel [activeId]="tile.id" [interval]="0">
+    <ng-template ngbSlide *ngFor="let t of tiles" [id]="t.id">
       <div class="img-wrapper">
-
-        <img src="{{'https://www.remipepin.com/api' + t.cover.url}}"
-             alt="Random first slide">
-
+        <img
+          src="{{
+            'http://localhost:1338' + t.attributes.cover.data.attributes.url
+          }}"
+          alt="Random first slide"
+        />
       </div>
 
       <div class="carousel-caption">
-        <h3>{{ t.title }}</h3>
+        <h3>{{ t.attributes.publisher }}</h3>
       </div>
     </ng-template>
   </ngb-carousel>
-  <a href=""
-     id="hide">
-    <fa-icon [icon]="faTimes"
-             (click)="visible=false"></fa-icon>
+  <a href="" id="hide">
+    <fa-icon [icon]="faTimes" (click)="visible = false"></fa-icon>
   </a>
 </div>
