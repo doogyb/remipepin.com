@@ -1,1 +1,1 @@
-export const cms = 'https://remipepin.com/cms';
+export const cms = 'https://www.remipepin.com/cms';
