@@ -1,1 +1,1 @@
-export const cms = 'https://www.doogyb.me/api';
+export const cms = 'https://remipepin.com/cms';
