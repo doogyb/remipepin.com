@@ -1,5 +1,6 @@
 import { Component, OnInit, Input, Renderer2 } from '@angular/core';
 import { Tile } from '../tile';
+import { cms } from '../conf';
 
 @Component({
   selector: 'tile',
@@ -15,7 +16,7 @@ export class TileComponent implements OnInit {
 
   ngOnInit(): void {
     let url = this.tile.attributes.square.data.attributes.url;
-    this.link = 'http://localhost:1338' + url;
+    this.link = `${cms}${url}`;
     Vibrant.from(this.link, { quality: 5 }).getPalette(
       (err, palette) => (this.background = palette.DarkVibrant.hex)
     );

@@ -7,9 +7,7 @@
     <ng-template ngbSlide *ngFor="let t of tiles" [id]="t.id">
       <div class="img-wrapper">
         <img
-          src="{{
-            'http://localhost:1338' + t.attributes.cover.data.attributes.url
-          }}"
+          src="{{ cms + t.attributes.cover.data.attributes.url }}"
           alt="Random first slide"
         />
       </div>
