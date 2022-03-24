@@ -9,7 +9,7 @@ export class ImageLinkService {
   constructor(private http: HttpClient) {}
 
   getImageLinks(): any {
-    const url = `${cms}/api/tiles?populate=*`;
+    const url = `${cms}/api/tiles?populate=*&pagination[pageSize]=100`;
     return this.http.get(url);
   }
 }
