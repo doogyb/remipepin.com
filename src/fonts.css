@@ -1,0 +1,41 @@
+@font-face {
+  font-family: 'Tungsten';
+  font-style: normal;
+  font-weight: 500;
+  src: url('//db.onlinewebfonts.com/t/561f38b1f4570de0fb8a39d691ab058c.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Tungsten-Light';
+  font-style: normal;
+  font-weight: 100;
+  src: url('//db.onlinewebfonts.com/t/561f38b1f4570de0fb8a39d691ab058c.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Gotham-Medium';
+  font-style: normal;
+  font-weight: 500;
+  src: url('//db.onlinewebfonts.com/t/7660bb62fdc3548ba51b96d0fba2705b.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Gotham-Light';
+  font-style: normal;
+  font-weight: 400;
+  src: url('//db.onlinewebfonts.com/t/7660bb62fdc3548ba51b96d0fba2705b.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Gotham-Book';
+  font-style: normal;
+  font-weight: 400;
+  src: url('//db.onlinewebfonts.com/t/7660bb62fdc3548ba51b96d0fba2705b.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Gotham-Bold';
+  font-style: normal;
+  font-weight: 700;
+  src: url('//db.onlinewebfonts.com/t/7660bb62fdc3548ba51b96d0fba2705b.woff2') format('woff2');
+}

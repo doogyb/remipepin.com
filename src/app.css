@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+body {
+  margin: 0;
+  background: #131212;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+:global(html) {
+  scroll-behavior: smooth;
+}
+
+:global(button) {
+  font: inherit;
+}
+
+:global(a) {
+  color: inherit;
+}
+
+:global(h1),
+:global(h2),
+:global(h3),
+:global(p) {
+  margin: 0;
+}
