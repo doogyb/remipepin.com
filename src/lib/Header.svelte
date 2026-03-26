@@ -1,6 +1,7 @@
 <script lang="ts">
   import { createEventDispatcher } from 'svelte';
   import headerBanner from '../assets/Header.svg';
+  import blogLinkImage from '../assets/Blog-Link.png';
 
   const dispatch = createEventDispatcher();
 
@@ -36,6 +37,9 @@
       </a>
     </span>
   </div>
+  <a href="/blog/" class="blog-link" aria-label="Go to blog">
+    <img src={blogLinkImage} alt="Sous les couvertures blog" />
+  </a>
 </header>
 
 <style>
@@ -53,6 +57,9 @@
   header {
     background: #d92d2b;
     padding: 50px 0 8px 20px;
+    position: relative;
+    min-height: 220px;
+    box-sizing: border-box;
   }
 
   .container {
@@ -98,5 +105,30 @@
     width: 18px;
     height: 18px;
     display: block;
+  }
+
+  .blog-link {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding-top: 8px;
+    line-height: 0;
+    display: block;
+  }
+
+  .blog-link img {
+    width: 310px;
+    height: auto;
+    display: block;
+  }
+
+  @media (max-width: 900px) {
+    header {
+      min-height: auto;
+    }
+
+    .blog-link {
+      display: none;
+    }
   }
 </style>
