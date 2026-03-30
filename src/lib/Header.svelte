@@ -37,7 +37,7 @@
       </a>
     </span>
   </div>
-  <a href="/blog/" class="blog-link" aria-label="Go to blog">
+  <a href="https://remipepin.com/blog" class="blog-link" aria-label="Go to blog">
     <img src={blogLinkImage} alt="Sous les couvertures blog" />
   </a>
 </header>
