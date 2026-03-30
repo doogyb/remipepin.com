@@ -10,12 +10,12 @@
   }
 </script>
 
-<header>
+<header class='flex justify-between items-end'>
   <div class="container">
     <button type="button" on:click={hideCarousel} class="brand">
       <img src={headerBanner} id="header" alt="Remi Pepin" />
     </button>
-    <span class="links">
+    <span class="links mb-[-6px]">
       <a id="contact" href="mailto:remi@les-collegues.net">CONTACT /</a>
       <a
         href="https://www.instagram.com/remipepino/"
