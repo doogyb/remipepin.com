@@ -15,7 +15,8 @@
     <button type="button" on:click={hideCarousel} class="brand">
       <img src={headerBanner} id="header" alt="Remi Pepin" />
     </button>
-    <span class="links mb-[-6px]">
+    <span class="links mb-[-6px] flex flex-col items-start">
+    <span>
       <a id="contact" href="mailto:remi@les-collegues.net">CONTACT /</a>
       <a
         href="https://www.instagram.com/remipepino/"
@@ -35,6 +36,12 @@
           />
         </svg>
       </a>
+      </span>
+      <a
+        class="sous-les-couvertures-link"
+        href="https://remipepin.com/blog"
+        aria-label="Go to blog"
+        >SOUS LES COUVERTURES<span class='text-black ml-2'>[BLOG]</span></a>
     </span>
   </div>
   <a href="https://remipepin.com/blog" class="blog-link" aria-label="Go to blog">
@@ -88,8 +95,7 @@
   .links {
     font-size: 20px;
     display: flex;
-    align-items: center;
-    gap: 8px;
+    align-items: start;
     white-space: nowrap;
   }
 
@@ -120,6 +126,28 @@
     width: 310px;
     height: 212px;
     display: block;
+  }
+
+  @media (min-width: 901px) {
+    .links .sous-les-couvertures-link {
+      display: none;
+    }
+    #header {
+      height: 100px;
+    }
+  }
+
+  @media (max-width: 900px) {
+    .links {
+      font-size: 12px;
+    }
+    .instagram-icon {
+      width: 12px;
+      height: 12px;
+    }
+    #header {
+      height: 50px;
+    }
   }
 
   @media (max-width: 900px) {
